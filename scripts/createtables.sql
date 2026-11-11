@@ -33,5 +33,10 @@ CREATE TABLE Recipes(
     Foreign Key (ProductId) REFERENCES Products (Id)
 );
 CREATE TABLE RecipeRawMaterials(
-   
+   AmountKg FLOAT NOT NULL,
+   RawMaterialId INTEGER NOT NULL,
+   RecipeId INTEGER NOT NULL,
+   Foreign Key (RecipeId) REFERENCES Recipes (Id),
+   Foreign Key (RawMaterialId) REFERENCES RawMaterials (Id),
+   PRIMARY KEY (RawMaterialId, RecipeId)
 );
