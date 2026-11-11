@@ -22,8 +22,10 @@ CREATE TABLE Purchases(
     Foreign Key (RawMaterialID) REFERENCES RawMaterials (Id)
 );
 CREATE TABLE Products(
-
-);
+    Id INTEGER PRIMARY KEY AUTOINCREMENT,
+    ProductName VARCHAR(20) NOT NULL UNIQUE,
+    Price FLOAT NOT NULL
+    );
 CREATE TABLE Recipes(
 
 );
