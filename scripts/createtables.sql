@@ -27,8 +27,11 @@ CREATE TABLE Products(
     Price FLOAT NOT NULL
     );
 CREATE TABLE Recipes(
-
+    Id INTEGER PRIMARY KEY AUTOINCREMENT,
+    ProductId INTEGER NOT NULL UNIQUE,
+    Instruction TEXT NOT NULL,
+    Foreign Key (ProductId) REFERENCES Products (Id)
 );
 CREATE TABLE RecipeRawMaterials(
-
+   
 );
