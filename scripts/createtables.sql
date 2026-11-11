@@ -19,7 +19,7 @@ CREATE TABLE Purchases(
     RawMaterialId INTEGER NOT NULL,
     AmountKg FLOAT NOT NULL,
     PurchaseDate VARCHAR(10) NOT NULL,
-    Foreign Key (RawMaterialID) REFERENCES RawMaterials (Id)
+    Foreign Key (RawMaterialId) REFERENCES RawMaterials (Id)
 );
 CREATE TABLE Products(
     Id INTEGER PRIMARY KEY AUTOINCREMENT,
