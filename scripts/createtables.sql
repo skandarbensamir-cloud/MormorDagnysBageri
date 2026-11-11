@@ -14,6 +14,15 @@ CREATE TABLE RawMaterials(
     SupplierId INTEGER NOT NULL,
     Foreign Key (SupplierId) REFERENCES Suppliers (Id)
 );
-CREATE TABLE Purchase(
+CREATE TABLE Purchases(
+
+);
+CREATE TABLE Products(
+
+);
+CREATE TABLE Recipes(
+
+);
+CREATE TABLE RecipeRawMaterials(
 
 );
