@@ -68,3 +68,29 @@ INSERT INTO RawMaterials(
     20,
     3
 );
+INSERT INTO Purchases(
+    RawMaterialId,
+    AmountKg,
+    PurchaseDate
+)VALUES(
+    1,
+    25,
+    '2026-11-12'
+),(
+    2,
+    40,
+    '2026-09-17'
+),(
+    1,
+    25,
+    '2026-10-25'
+),(
+    3,
+    100,
+    '2026-11-01'
+),(
+    2,
+    40,
+    '2026-10-29'
+
+);
