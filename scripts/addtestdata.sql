@@ -37,3 +37,34 @@ INSERT INTO Products(
     'Prinsesstorta',
     495
 );
+INSERT INTO RawMaterials(
+    ArticleNumber,
+    Name,
+    PricePerKg,
+    SupplierId
+)VALUES(
+    'Ghk-cu',
+    'Vetemjöl',
+    12,
+    1
+),(
+    'Mk-677',
+    'Smör',
+    10,
+    2
+),(
+    'Yfr56',
+    'Kanel',
+    19,
+    3
+),(
+    'Ha-ha',
+    'Gradde',
+    100,
+    2
+),(
+    'Ncd-29',
+    'socker',
+    20,
+    3
+);
