@@ -107,3 +107,32 @@ INSERT INTO Recipes(
     3,
     'Varva sockerbotten med kräm och grädde, täck med marsipan'
 );
+INSERT INTO RecipeRawMaterials(
+    AmountKg,
+    RawMaterialId,
+    RecipeId
+)VALUES(
+    0.5,
+    1,
+    1
+),(
+    1.5,
+    2,
+    1
+),(
+    2.5,
+    3,
+    2
+),(
+    0.7,
+    5,
+    2
+),(
+    3.5,
+    4,
+    3
+),(
+    5.5,
+    4,
+    1
+);
