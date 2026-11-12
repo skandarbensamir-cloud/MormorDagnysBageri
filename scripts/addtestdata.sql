@@ -24,3 +24,16 @@ INSERT INTO Suppliers(
     '031-540098',
     'Contactwadewillson@kryddbodet.com'
 );
+INSERT INTO Products(
+    ProductName,
+    Price
+)VALUES(
+    'Kanellbulle',
+    25
+),(
+    'Chokladboll',
+    45
+),(
+    'Prinsesstorta',
+    495
+);
