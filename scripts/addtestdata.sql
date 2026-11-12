@@ -94,3 +94,16 @@ INSERT INTO Purchases(
     '2026-10-29'
 
 );
+INSERT INTO Recipes(
+    ProductId,
+    Instruction
+)VALUES(
+    1,
+    'Knåda, rulla med kanelsmör, grädda 225 grader 8 min'
+),(
+    2,
+    'Blanda smör, socker, havre och kakao, rulla till bollar'
+),(
+    3,
+    'Varva sockerbotten med kräm och grädde, täck med marsipan'
+);
