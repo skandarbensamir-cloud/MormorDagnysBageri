@@ -9,3 +9,8 @@ JOIN Suppliers ON RawMaterials.SupplierId = Suppliers.Id;
 SELECT Products.ProductName, Recipes.Instruction
 FROM Products
 JOIN Recipes ON Recipes.ProductId = Products.Id;
+--Visar råvaror och mängd för kanellbullen!!!
+SELECT RawMaterials.Name, RecipeRawMaterials.AmountKg
+FROM RecipeRawMaterials
+JOIN RawMaterials ON RecipeRawMaterials.RawMaterialId = RawMaterials.Id
+WHERE RecipeRawMaterials.RecipeId = 1;
