@@ -1,6 +1,6 @@
 CREATE TABLE Suppliers(
     Id INTEGER PRIMARY KEY AUTOINCREMENT,
-    CompanyName VARCHAR(20) NOT NULL,
+    CompanyName VARCHAR(25) NOT NULL,
     Contactperson VARCHAR(25) NOT NULL,
     AddressLine VARCHAR(34) NOT NULL,
     PhoneNumber VARCHAR(24),
