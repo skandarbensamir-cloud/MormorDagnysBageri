@@ -17,10 +17,12 @@ WHERE RecipeRawMaterials.RecipeId = 1;
 
 --Vårt VG:Test FK ska stoppa felaktig data
 PRAGMA foreign_keys = ON;
---test rad
+-- Försök lägga in en råvara med leverantör 999, som inte finns
 INSERT INTO RawMaterials(ArticleNumber, Name, PricePerKg, SupplierId)
 VALUES('TEST-1', 'Choklad', 10, 999);
 -- Förväntat resultat: FOREIGN KEY constraint failed, eftersom leverantör 999 inte finns
 
 -- Om PRAGMA inte körs först släpps Choklad in, eftersom SQLite har FK-kontrollen avstängd som standard
+
+-- Städning: tar bort testraden om den kommit in utan PRAGMA
 DELETE FROM RawMaterials WHERE ArticleNumber = 'TEST-1';
